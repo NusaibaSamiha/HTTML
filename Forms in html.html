@@ -1,23 +1,39 @@
 <!DOCTYPE html>
+
 <html>
 
-<head>
-
 <body>
-    <h1>Personal Details Form</h1>
+
+    <h1>Details of Users</h1>
+
     <form>
-        <label>Name</label><br>
-        <input type="text" id="name"><br><br>
-        <label>Email ID</label><br>
-        <input type="text" id="email"><br><br>
-        <label>Contact Number</label><br>
-        <input type="password" id="contact"><br><br>
-        <label>Gender</label><br>
-        <input type="radio" id="female" name="gender" value="Female">Female<br>
-        <input type="radio" id="male" name="gender" value="Male">Male<br>
-        <input type="Submit">
+        <fieldset>
+            <legend>Personal Information:</legend>
+            <label>First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label>Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label>Gender:</label><br><br>
+            <input type="radio" name="subject" value="Male"> Male<br><br>
+            <input type="radio" name="subject" value="Female"> Female<br><br>
+            <input type="radio" name="subject" value="Other"> Other<br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="email">Password:</label>
+            <input type="password" name="password"><br><br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday"><br><br>
+            <label for="email">Address:</label><br />
+            <textarea rows="5" cols="50" name="description">Enter description here...</textarea><br><br>
+            <label for="email">Image:</label><br><br>
+            <input type="file" name="fileupload" accept="image/*" /><br><br><br><br>
+            <center>
+                <input type="submit" name="submit" value="Submit" />
+                <input type="reset" name="reset" value="Reset" />
+            </center>
+        </fieldset>
     </form>
+
 </body>
-</head>
 
 </html>
